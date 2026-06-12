@@ -1,0 +1,36 @@
+Write a program to implement a simple calculator using if-else-if.
+#include<stdio.h>
+void main()
+{
+	int a,b;
+	char eq;
+	printf("Enter the equation to perform:");
+	scanf("%c",&eq);
+	if (eq=='+')
+	{printf("Enter the two number: ");
+	scanf("%d%d",&a,&b);
+		printf("addition: %d ",a+b);
+	}
+	else if (eq =='-')
+	{
+		printf("Enter the two number: ");
+	    scanf("%d%d",&a,&b);
+	    printf("Substraction : %d",a-b);
+	}
+	else if (eq =='*')
+	{
+		printf("Enter the two number: ");
+	    scanf("%d%d",&a,&b);
+	    printf("Multiply : %d",a*b);
+	}
+	else if (eq =='/')
+	{
+		printf("Enter the two number: ");
+	    scanf("%d%d",&a,&b);
+	    printf("dividion : %d",a/b);
+	}
+	else
+	{
+		printf("Invalid statement");
+	}	
+}
