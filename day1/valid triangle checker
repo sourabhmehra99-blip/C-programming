@@ -1,0 +1,18 @@
+Write a program to determine whether a triangle is valid based on its three angles.
+
+#include<stdio.h>
+void main()
+{
+	float ang1,ang2,ang3,sum;
+	printf("Enter the three angles of triangle: ");
+	scanf("%f%f%f",&ang1,&ang2,&ang3);
+	sum = ang1+ang2 +ang3;
+	if (sum == 180)
+	{
+		printf("the triangle is valid base.");
+	}
+	else
+	{
+		printf("the triangle is not valid base.");
+	}
+}
