@@ -1,0 +1,17 @@
+//with argument and with return value
+#include<stdio.h>
+float add(float,float);
+float add(float a,float b)
+{float sum;
+	sum = a+b;
+	return sum;
+}
+void main()
+{
+	float res;
+	float a,b;
+	printf("Enter the value of a and b: ");
+	scanf("%f%f",&a,&b);
+    res = add(a,b);
+    printf("Sum = %.2f",res);
+}
