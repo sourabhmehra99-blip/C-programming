@@ -1,0 +1,12 @@
+// to print a message using function.
+// no arguement and no return value.
+/*#include<stdio.h>
+void show();
+void show()
+{
+	printf("hello WORLD");
+}
+void main()
+{
+show();
+}
