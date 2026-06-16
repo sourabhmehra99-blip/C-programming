@@ -1,0 +1,6 @@
+//program to print a message
+#include<studio.h>
+void main()
+{
+	printf("Welcome to C programming");
+}
