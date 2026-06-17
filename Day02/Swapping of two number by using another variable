@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main()
+{
+	int a,b,c;
+	printf("Enter the value of a and b: ");
+	scanf("%d%d",&a,&b);
+	printf//swapping of two values using third variable
+("before swapping value of a = %d\n",a);
+	printf("before swapping value of b = %d\n",b);
+	c=a;
+	a=b;
+	b=c;
+	printf("before swapping value of a = %d\n",a);
+	printf("before swapping value of b = %d\n",b);
+}
