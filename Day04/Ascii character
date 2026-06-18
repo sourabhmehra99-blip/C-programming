@@ -1,0 +1,9 @@
+// print ascii value corrosponding to its char
+# include <stdio.h>
+void main()
+{
+	char ch;
+	printf("Enter the value of ch: ");
+	scanf("%c",&ch);
+	printf("character = %d\n",ch);
+}
