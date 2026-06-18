@@ -1,0 +1,24 @@
+#include<stdio.h>
+void swap(int *a,int *b)
+{
+	int temp;
+	temp = *a;
+	*a = *b;
+	*b= temp;
+	printf("the a is %d\n",*a);// *a and *b gives value of the variable
+	printf("the b is %d\n",*b);
+	printf("the a is %d\n",a);
+	printf("the b is %d\n",b);
+	
+}
+void main()
+{
+	int a ,b;
+	printf("Enter the number a and b: ");
+	scanf("%d%d",&a,&b);
+	printf("the a is %d\n",a);
+	printf("the b is %d\n",b);
+	swap(&a,&b);// &a and &b gives address 
+	printf("the a is %d\n",a);
+	printf("the b is %d\n",b);
+}
