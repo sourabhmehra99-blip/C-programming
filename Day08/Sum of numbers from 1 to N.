@@ -1,0 +1,14 @@
+Find the sum of numbers from 1 to N.
+#include<stdio.h>
+void main()
+{
+	int num,sum,i;
+	printf("Enter the number: ");
+	scanf("%d",&num);
+	for(i=1;i<=num;i++)
+	{
+		sum = sum+i;
+		
+	}
+	printf("Sum=%d",sum);
+}
