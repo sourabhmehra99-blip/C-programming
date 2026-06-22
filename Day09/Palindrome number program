@@ -1,0 +1,27 @@
+write a program to find a given number is palindrame
+
+#include<stdio.h>
+void main()
+{
+	int n,rem,rev=0,a;
+	printf("Enter the number: ");
+	scanf("%d",&n);
+	a=n;
+	while(n>0)
+	{
+		
+		rem = n%10;
+		rev = (rev*10)+rem;
+		n = n/10;
+				
+    }
+    if(a==rev)
+		{
+			printf("the number is palindrame");
+				}
+		else
+		{
+			printf("the number is not palindrame");
+		}
+    
+}
