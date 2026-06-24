@@ -1,0 +1,34 @@
+// Reversing of array
+#include<stdio.h>
+void main()
+{
+	int i,n,temp;
+	printf("Enter the no of element: ");
+	scanf("%d",&n);
+	int a [n];
+	// input the Array
+	printf("Enter the elements of array: ");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	// Original array 
+	printf("Enter the Original  of array \n ");
+	for(i=0;i<n;i++)
+	{
+		printf("%d\t",a[i]);
+	}
+	//reversing the array
+	for(i=0;i<n/2;i++)
+	{
+		temp = a[i];
+		a[i] = a[n-1-i];
+		a[n-1-i] = temp;
+	}
+	//print Reverse array
+	for(i=0;i<n;i++)
+	{
+		printf("%d\t",a[i]);
+	}
+	
+}
