@@ -1,0 +1,36 @@
+// reversing the array using pointers
+#include<stdio.h>
+void main()
+{
+	int n,*p,i,temp,*start,*end;
+	printf("enter the size of array");
+	scanf("%d",&n);
+	printf("Enter the element if array");
+	int a[n];
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	printf("\nDisplay the original arrays\n");
+	for(i=0;i<n;i++)
+	{
+		printf("%d\t",a[i]);
+	}
+	
+	start = a;
+	end = a+n-1;
+	while(start<end)
+	{
+		temp= *start;
+		*start = *end;
+		*end = temp;
+		start++;
+		end--;
+		
+	}
+	printf("\nDisplay the reverse arrays\n");
+	for(i=0;i<n;i++)
+	{
+		printf("%d\t",a[i]);
+	}
+}
