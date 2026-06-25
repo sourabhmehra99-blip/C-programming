@@ -4,7 +4,7 @@ int main()
 
     printf("Enter number of strings: ");
     scanf("%d",&n);
-    getchar();   
+    getchar();
 
     char str[n];
 	
