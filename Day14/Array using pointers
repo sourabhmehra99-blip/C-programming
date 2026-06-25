@@ -1,0 +1,18 @@
+// Array using pointers
+//pointer to array
+#include<stdio.h>
+void main()
+{
+	int a[5],*p,i;
+	printf("Enter the element of array: ");
+	for(i=0;i<5;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	p=a;//p = &a[0]
+	for(i=0;i<5;i++)
+	{
+		//printf("%d\t",*p++);
+		printf("%d\t",*(p+i));
+		}	
+}
