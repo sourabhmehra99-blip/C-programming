@@ -1,0 +1,14 @@
+// string in c lang
+#include<stdio.h>
+int main()
+{
+	char str[20];
+	printf("Enter the string : ");
+	
+	//scanf("%s",str); // not work in case of string
+	gets(str);
+	// also use prints it does not make error
+	//printf("string are : %s\n",str);
+	puts(str);
+	
+}
