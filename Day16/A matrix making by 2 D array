@@ -1,5 +1,5 @@
 // making the matric by 2-D ARRAYS: 
-/*#include<stdio.h>
+#include<stdio.h>
 void main()
 {
 	int r,c,j,i;
