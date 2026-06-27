@@ -1,41 +1,34 @@
 #include<stdio.h>
 void main()
 {
-	int i,n,flag = 0,search;
-	printf("Enter the no of element: ");
+	int n,i,j;
+	printf("Enter the number of element: ");
 	scanf("%d",&n);
-	int a [n];
-	// input the Array
-	printf("Enter the elements of array: ");
+	int a[n];
+	printf("Enter the element of arrays:\n ");
 	for(i=0;i<n;i++)
 	{
 		scanf("%d",&a[i]);
 	}
-	printf("Enter the element to found: ");
-	scanf("%d",&search);
-	// Original array 
-	printf("the Original  of array \n ");
+	// printing the original array
+	printf("The arrays is\n ");
 	for(i=0;i<n;i++)
 	{
 		printf("%d\t",a[i]);
 	}
-	//loop for search an array
+	int count =0,num;
 	for(i=0;i<n;i++)
 	{
-		if(search == a[i])
+		for(j=i+1;j<n;j++)
 		{
-			flag = 1;
-			break;
+			if(a[i]==a[j])
+			{
+				num = a[i];
+				count ++;
+			}
 		}
 	}
-	if(flag)
-	{
-		printf("Element found");
-	}
-	else
-	{
-		printf("Element not found");
-	}
 	
+	printf("count:%d",count);
 	
 }
