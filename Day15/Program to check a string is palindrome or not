@@ -10,10 +10,12 @@ int main()
 	
 	getchar();//
 	
-	char temp,str[n];
+	int flag =1;
+	char str[n];
 	char pal[n];
+	printf("Enter the sring: ");
 	gets(pal);
-	printf("string\n");
+	printf("Original string:\t");
 	
 	puts(pal);
 	
@@ -31,14 +33,21 @@ int main()
 		str[i]=pal[len-1-i];
 
 	}
-	printf("New string\n");
+	printf("New string:\t");
 	puts(str);
-	if(str==pal)
+	for(i=0;i<len;i++)
 	{
-		printf("the string is palindrome\n");
+		if(str[i]!=pal[i])
+		{
+			flag = 0;
+			break;
+		}
+	}
+	if(flag ==1)
+	{
+		printf("palindrome");
 	}
 	else
-	{
-		printf("Not a palindrome");
-	}
+	printf("NOT a palindrome");
+
 }
