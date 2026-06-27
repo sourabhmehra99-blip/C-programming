@@ -1,0 +1,45 @@
+// program to count the vowal and consenemt 
+#include<stdio.h>
+int main()
+{
+	int n,i;
+	printf("Enter the number of elements: ");
+	scanf("%d",&n);
+	getchar();
+	char str[n];
+	printf("Enter the string: ");
+	gets(str);
+	puts(str);
+	
+	int len=0;
+	for(i=0;i<n;i++)
+	{
+		if(str[i] !='\0')
+		{
+			len++;
+		}
+	}
+	int vol=0,con=0;
+	for(i=0;i<len;i++)
+	{
+		if (str[i]=='A'||str[i]=='E'||str[i]=='I'||
+		str[i]=='O'||str[i]=='U'||
+		str[i]=='a'||str[i]=='e'||
+		str[i]=='i'||str[i]=='o'||
+		str[i]=='u')
+		{
+			vol++;
+			
+		}
+		else if(str[i]!='\0')
+		{
+		con++;
+	    }
+	
+	}
+	
+	
+	printf("The number of vowels: %d\n",vol);
+    printf("The number of consonants: %d",con);
+
+}
