@@ -1,0 +1,31 @@
+// Array of structure
+#include<stdio.h>
+struct emp 
+{
+    int eid ;
+	char name[20];
+	float sal;	
+};
+void main()
+{
+	struct emp e1[5];
+	printf("Enter the details of emplyoyee\n");
+	int i;
+	for(i=0;i<5;i++)
+	{
+	   printf("Enter the eid:  ");
+        scanf("%d",&e1[i].eid);
+	   printf("Enter the name of emplyoyee:  ");
+	    scanf("%s",&e1[i].name);
+	   printf("Enter the salary\n: ");
+	    scanf("%.2f",&e1[i].sal);
+    }
+	
+	for (i=0;i<5;i++)
+	{
+	printf("Display the details of emplyoyee\n");
+	printf("eid = %d\n",e1[i].eid);
+	printf("name = %s\n",e1[i].name);
+	printf("salary = %f\n",e1[i].sal);
+    }
+}
