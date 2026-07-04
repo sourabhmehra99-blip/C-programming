@@ -1,0 +1,21 @@
+// union in c
+// union vs struc
+#include<stdio.h>
+struct emp1
+{
+	int eid ;
+	char name[20];
+	float sal;
+};
+union emp2
+{
+	int eid ;
+	char name[20];
+	float sal;
+};
+
+void main()
+{
+	printf("size of structure = %d\n",sizeof(struct emp1));
+	printf("size of union  = %d\n",sizeof(union emp2));
+}
