@@ -1,0 +1,46 @@
+//to calculate simple and compound interest
+#include<stdio.h>
+#include<math.h>
+void  main()
+{
+	int n;
+	printf("Enter the 1 for simple interest and 2 for compound interest: ");
+	scanf("%d",&n);
+	if(n==1)
+{
+
+	float p,r,t;
+	printf("Enter the principal amount: ");
+	scanf("%f",&p);
+	printf("Enter the Rate: ");
+	scanf("%f",&r);
+	printf("Enter the time in years: ");
+	scanf("%f",&t);
+	
+	float sim;
+	sim = ((p*r*t)/100);
+	printf("The simple intrest is %.2f\n",sim);
+	
+	float tol;
+	tol = sim + p; 
+	printf("the total amount will %.2f ",tol);
+ }
+ else if(n==2)
+ {
+ 	float p1,r,t;
+ 	printf("Enter the principal amount: ");
+	scanf("%f",&p1);
+	printf("Enter the Rate: ");
+	scanf("%f",&r);
+	printf("Enter the time in years: ");
+	scanf("%f",&t);
+	
+	float com,A;
+	A = p1*pow((1+r/100),t);
+	com = A-p1;
+	printf("The compound  intrest is %.2f\n",com);
+	printf("the total amount will %.2f ",A);
+ }
+ 
+	
+}
