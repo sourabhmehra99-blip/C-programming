@@ -1,0 +1,18 @@
+// file handling
+/*#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+	FILE *fp;
+	fp=fopen("abc.txt","r");
+	if(fp == NULL)
+	{
+		printf("file not exist: ");
+		exit(0);
+	}
+	char ch ;
+	ch = fgetc(fp);
+	printf("char = %c\n",ch);
+	printf("Data read succesfully");
+	fclose(fp);
+}
