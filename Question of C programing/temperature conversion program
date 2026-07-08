@@ -1,0 +1,34 @@
+// program to convert the celsius to fahrenheit
+#include<stdio.h>
+void main()
+{
+    int n;
+    float c,f,k;
+    printf("CONVERSTION OF TEMPERATURE\n1.IN CELSIUS\n2.IN FAHRENHEIT\n3.IN KELVIN\n");
+    printf("Enter your choice: ");
+    scanf("%d",&n);
+    switch(n)
+    {
+    	case 1:
+    	
+    	printf("Enter the temperature in fahrenheit to convert in celsius: ");
+    	scanf("%f",&f);
+    	printf("the temperature in calsius %.2f",c = (f-32)*5/9);
+    	break;
+    	
+    	case 2:
+    	printf("Enter the temperature in celsius to convert fahrenheit: ");
+    	scanf("%f",&c);
+    	printf("the temperature in calsius %.2f",f = (c*1.8)+32);
+    	break;
+    	
+    	case 3:
+    	printf("Enter the temperature in kelvin to  convert celsius : ");
+    	scanf("%f",&c);
+    	printf("the temperature in calsius %.2f",f = c+273);
+    	break;
+    	
+    	default:
+		printf("Invalid statement");
+	}
+}
