@@ -1,0 +1,21 @@
+// file handling
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+	FILE *fp;
+	fp=fopen("abc.txt","w");
+	if(fp == NULL)
+	{
+		printf("Error in the file creation ");
+		exit(0);
+		
+	}
+	char ch [1000];
+	printf("Enter the string: ");
+	gets(ch);
+	// fputs(ch,fp);
+	fprintf(fp,"%s",ch);
+	printf("Data write succesfully");
+	fclose(fp);
+}
