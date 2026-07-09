@@ -1,0 +1,17 @@
+// program to find roots of quadratic equation
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+	int a,b,c,d,r1,r2;
+	printf("Enter the coefficient of x^2: ");
+	scanf("%d",&a);
+	printf("Enter the coefficient of x : ");
+	scanf("%d",&b);
+	printf("Enter the constant value of equation: ");
+	scanf("%d",&c);
+	
+	d = b*b-4*a*c;
+	printf("The first roots of equation %d\n",r1 = (-b+ sqrt(d))/2*a);
+	printf("The second roots of equation %d",r2 = (b+ sqrt(d))/2*a);
+}
