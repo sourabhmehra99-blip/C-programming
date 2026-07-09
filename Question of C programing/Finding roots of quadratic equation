@@ -13,5 +13,5 @@ void main()
 	
 	d = b*b-4*a*c;
 	printf("The first roots of equation %d\n",r1 = (-b+ sqrt(d))/2*a);
-	printf("The second roots of equation %d",r2 = (b+ sqrt(d))/2*a);
+	printf("The second roots of equation %d",r2 = (-b+ sqrt(d))/2*a);
 }
