@@ -1,0 +1,55 @@
+#include <stdio.h>
+void main()
+{
+	int a,b,sum;
+	float result;
+	
+	printf("1.Addtion\n2.Substraction\n3.Multiply\n4.Division\n");
+	int choice ;
+	printf("Enter what you have to do\n");
+	scanf("%d",&choice);
+	if (choice == 1)
+	{
+		printf("=== Addtion ===\n");
+		printf("Enter the number A and B :");
+		scanf("%d%d",&a,&b);
+		sum = a + b;
+		printf("addtion of a and b : %d ",sum) ;
+	}
+	else if (choice == 2)
+	{
+		printf("=== Substraction ===\n");
+		printf("Enter the number A and B :");
+		scanf("%d%d",&a,&b);
+		sum = a - b;
+		printf("Substraction of a and b : %d ",sum) ;
+	}
+	else if (choice == 3)
+	{
+		printf("=== Multiply ===\n");
+		printf("Enter the number A and B :");
+		scanf("%d%d",&a,&b);
+		result = a * b;
+		printf("Multiply of a and b : %f ",result) ;
+	}
+	else if (choice == 4)
+	{
+		printf("=== Division ===\n");
+		printf("Enter the number A and B :");
+		scanf("%d%d",&a,&b);
+		if(b ==0)
+		{
+			printf("b can not be zero.");
+		}
+		 else;
+		{
+		result = a / b;
+		printf("Division of a and b : %f ",result);
+		}
+	}
+	
+	else
+	{
+	printf("Invalid choice ");}
+	
+}
